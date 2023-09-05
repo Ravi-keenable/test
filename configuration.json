@@ -1,0 +1,39 @@
+{
+    "info": {
+        "uniqueRecordPath": null,
+        "url":"",
+        "ressplitpath": "$.data",
+        "isdependtent": "false",
+        "dependency": {
+            "state_masters": "$.resultFlag"
+        },
+        "dependencyvaluemap": {
+            "state_masters": {
+                "code": "$.attributes.code"
+            }
+        },
+        "apimethod": "GET",
+        "pathHeaders": {
+            "start":"0",
+            "limit":"60"
+        },
+        "queryHeaders": {
+            "cat_id":"sg"
+        },
+        "authHeaders": {
+            "Authorization": "igod"
+        }
+    },
+    "data": {
+        "isIterative": "true",
+        "iterativeInfo": {
+            "iterativeType": "offset",
+            "iteratesByHeader": "true",
+            "iterativeKeys": {
+                "startIndex": "start",
+                "limit":"limit"
+            }
+        },
+        "payload": null
+    }
+}

@@ -1,0 +1,83 @@
+{
+   "ApiMetadata":{
+      "meta_id":null,
+      "totalRecordCount":null,
+      "sourceUrl": null,
+      "recordKeyList":null,
+      "lastHitStatusCode":null,
+      "recordKeyCount":null,
+      "datasource":null,
+      "datasourceType":null,
+      "protobufSchema":null,
+      "topicList":null,
+      "totalExpectedRecords":null,
+      "totalRetrievedRecords":null,
+      "totalUniqueRecords":null,
+      "totalDuplicateRecords":null,
+      "totalBatchCount":null,
+      "remarks":null,
+      "master":null
+   },
+   "CMSMetadata":{
+      "sector": null,
+      "keywords": null,
+      "tags": null,
+      "people_group": null,
+      "type":null,
+      "lineage": {
+         "central": {
+            "ministry": null,
+            "department": null,
+            "organization": null
+         },
+         "state": {
+            "state_department": null,
+            "organization": null,
+            "district": null
+         }
+      }
+   },
+   "BatchMetadata": {
+      "meta_id":null,
+      "batch_id": null,
+      "batchRetrievedRecordCount": null,
+      "batchDataSize": null,
+      "batchCapacity": null,
+      "batchHash": null,
+      "batchProcessingTime":null,
+      "batchResponseTime":null
+   },
+   "RecordMetadata": {
+      "meta_id": null,
+      "batch_id": null,
+      "record_id":null,
+      "title": null,
+      "state_code":null,
+      "state_lgd_code":null,
+      "state_name":null,
+      "district_name":null,
+      "city_name":null,
+      "country_name":null,
+      "featured_image_url":null,
+      "photos":null,
+      "video_url":null,
+      "how_to_reach":null,
+      "geolocation":null,
+      "category":null,
+      "sub-category":null,
+      "description": null,
+      "source_record_id_elastic": null,
+      "source_record_id": null,
+      "source_language": null,
+      "source_published_date": null,
+      "workflow_state": null,
+      "updated_by": null,
+      "created_at": null,
+      "updated_at": null,
+      "archival_date": null,
+      "recordDataSize": null,
+      "recordHash": null,
+      "requireCMSVerification":null,
+      "urlVerifyStatus":null
+   }
+}

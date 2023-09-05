@@ -1,0 +1,52 @@
+2023-09-02 21:06:09,578 -  -  -  -  - INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2023-09-02 21:06:09,581 -  -  -  -  - INFO  [org.apa.cam.mai.MainSupport] (Quarkus Main Thread) Apache Camel (Main) 4.0.0-M3 is starting
+2023-09-02 21:06:12,057 -  -  -  -  - INFO  [org.inf.HOTROD] (Quarkus Main Thread) ISPN004021: Infinispan version: Infinispan 'Flying Saucer' 14.0.9.Final
+2023-09-02 21:06:15,143 -  -  -  -  - INFO  [org.inf.HOTROD] (Quarkus Main Thread) ISPN004021: Infinispan version: Infinispan 'Flying Saucer' 14.0.9.Final
+2023-09-02 21:06:15,192 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 4.0.0-M3 (camel-15) is starting
+2023-09-02 21:06:15,196 -  -  -  -  - INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Property-placeholders summary
+2023-09-02 21:06:15,197 -  -  -  -  - INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     [MicroProfilePropertiesSource] ACQUISATION_CONFIG_QUERY=SELECT acquisation_config FROM configuration WHERE api_name=${body}
+2023-09-02 21:06:15,197 -  -  -  -  - INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     [MicroProfilePropertiesSource] ID_PREFIX=igod-adarsh
+2023-09-02 21:06:15,198 -  -  -  -  - INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     [MicroProfilePropertiesSource] EXTERNAL_API_URL=https://igod.gov.in/api/goiwebdirectory/list/${header.start}/${header.limit}
+2023-09-02 21:06:15,199 -  -  -  -  - INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     [MicroProfilePropertiesSource] ACQUISATION_STORAGE_TOPIC=igod_web-dir_ACQUISITION
+2023-09-02 21:06:15,199 -  -  -  -  - INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     [MicroProfilePropertiesSource] KAFKA_URL=65.21.120.112:10092
+2023-09-02 21:06:15,200 -  -  -  -  - INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     [MicroProfilePropertiesSource] METADATA_TOPIC=igod_web-dir-APIMETADATA
+2023-09-02 21:06:15,201 -  -  -  -  - INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     [MicroProfilePropertiesSource] BATCH_METADATA_TOPIC=igod_web-dir-BATCHMETADATA
+2023-09-02 21:06:15,202 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (started:14)
+2023-09-02 21:06:15,203 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route144 (direct://LoadConfigFromDb)
+2023-09-02 21:06:15,204 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started ProcessData (direct://processData)
+2023-09-02 21:06:15,205 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route145 (direct://IndependentIterativeCallApi)
+2023-09-02 21:06:15,205 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route146 (direct://IndependentCallApi)
+2023-09-02 21:06:15,206 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route147 (direct://ExtApiCall)
+2023-09-02 21:06:15,207 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route148 (direct://SplitAndStoreInKafka)
+2023-09-02 21:06:15,207 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route149 (direct://CreateResponse)
+2023-09-02 21:06:15,208 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route150 (direct://StoreApiMetadata)
+2023-09-02 21:06:15,209 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route151 (direct://StoreBatchMetadata)
+2023-09-02 21:06:15,209 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route152 (direct://SetAuthHeaders)
+2023-09-02 21:06:15,210 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route153 (direct://bcrypt)
+2023-09-02 21:06:15,211 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route154 (direct://CreateAuditCSV)
+2023-09-02 21:06:15,212 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route155 (rest://post:/independent:/processData)
+2023-09-02 21:06:15,212 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route156 (rest://get:/independent)
+2023-09-02 21:06:15,213 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 4.0.0-M3 (camel-15) started in 20ms (build:0ms init:0ms start:20ms)
+2023-09-02 21:06:15,215 -  -  -  -  - INFO  [io.quarkus] (Quarkus Main Thread) DataAcquisationGeneric 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.2.0.Final) started in 6.648s. Listening on: http://0.0.0.0:8301
+2023-09-02 21:06:15,216 -  -  -  -  - INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2023-09-02 21:06:15,216 -  -  -  -  - INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-bean, camel-core, camel-direct, camel-http, camel-infinispan, camel-jackson, camel-jdbc, camel-jsonpath, camel-kafka, camel-log, camel-platform-http, camel-rest, camel-seda, camel-timer, cdi, infinispan-client, jdbc-mariadb, kafka-client, narayana-jta, smallrye-context-propagation, vertx]
+2023-09-02 21:06:15,217 -  -  -  -  - INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 7.323s 
+2023-09-02 21:07:19,663 -  -  -  -  - INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in DataAcquisationRoute.class, GlobalDataObject.class, GeneralProcess.class, SetMetadata.class.
+2023-09-02 21:07:19,664 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 4.0.0-M3 (camel-15) is shutting down
+2023-09-02 21:07:19,672 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (stopped:14)
+2023-09-02 21:07:19,673 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route144 (direct://LoadConfigFromDb)
+2023-09-02 21:07:19,674 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped ProcessData (direct://processData)
+2023-09-02 21:07:19,675 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route145 (direct://IndependentIterativeCallApi)
+2023-09-02 21:07:19,676 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route146 (direct://IndependentCallApi)
+2023-09-02 21:07:19,677 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route147 (direct://ExtApiCall)
+2023-09-02 21:07:19,677 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route148 (direct://SplitAndStoreInKafka)
+2023-09-02 21:07:19,678 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route149 (direct://CreateResponse)
+2023-09-02 21:07:19,678 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route150 (direct://StoreApiMetadata)
+2023-09-02 21:07:19,679 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route151 (direct://StoreBatchMetadata)
+2023-09-02 21:07:19,680 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route152 (direct://SetAuthHeaders)
+2023-09-02 21:07:19,680 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route153 (direct://bcrypt)
+2023-09-02 21:07:19,681 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route154 (direct://CreateAuditCSV)
+2023-09-02 21:07:19,681 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route155 (rest://post:/independent:/processData)
+2023-09-02 21:07:19,682 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route156 (rest://get:/independent)
+2023-09-02 21:07:19,683 -  -  -  -  - INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 4.0.0-M3 (camel-15) shutdown in 19ms (uptime:1m4s)
+2023-09-02 21:07:19,689 -  -  -  -  - INFO  [io.quarkus] (Quarkus Main Thread) DataAcquisationGeneric stopped in 0.025s
